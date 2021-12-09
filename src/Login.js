@@ -4,6 +4,7 @@ import './Login.css';
 import {auth,provider} from './firebase';
 import { actionTypes } from './reducer';
 import { useStateValue } from './StateProvider';
+import Logo from "./images/logo.png"
 
 function Login() {
     const [{},dispatch] = useStateValue();
@@ -21,7 +22,7 @@ function Login() {
     return (
         <div className="login">
            <div className="login_container">
-               <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt=""/> 
+               <img src={Logo} alt=""/> 
                 <div className="login_text">
                     <h1>Sign in to Whatsapp</h1>
                 </div>
